@@ -85,6 +85,22 @@ CI environment must match local development environment.
 Version mismatches commonly break builds.
 
 
+## Error:
+SpringBootTest contextLoads failed during CI.
+
+## Cause:
+Test tried to start full Spring context without required configuration.
+
+## Solution:
+Temporarily skip tests using:
+
+./mvnw clean install -DskipTests
+
+## Learning:
+CI pipelines also run tests automatically.
+Incomplete configuration can cause test failures.
+
+
 ---
 
 ## Next Steps:
