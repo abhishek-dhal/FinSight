@@ -17,6 +17,7 @@ Current structure:
 - React
 - MySQL
 - Docker
+- 
 - CI/CD (GitHub Actions)
 
 ## 📌 Goal
